@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style> 
+
+      #whitelist{
+            background-color: chocolate;
+            width: 567px;
+            height: 230px;
+            margin-top: 39px;
+            border-radius: 20px;
+
+        }
+
+    body{ 
+        background-image: url('https://i.pinimg.com/736x/39/8d/73/398d732701eb854945885d25dc426d3c.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(66, 43, 2);
+        padding-bottom: 40px;
+    }
+
+     button {
+            width: 95%;
+            padding: 10px;
+            background-color: #c8842c;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+     }
+     input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+    </style>
+    
+    <title>Seatwork</title>
+</head>
+<body>
+
+<center>
+<h1>Basketball Varsity Team Checker</h1>
+<h3>Whitelist Verification System</h3>
+
+    
+    <div class="container" id="whitelist">
+        <input type="text" id="firstname" placeholder="Enter your first name...">
+        <input type="text" id="lastname" placeholder="Enter your last name...">
+        <button py-click="whitelist">ENTER</button>
+
+   
+        <br><br>
+        <div id="output">
+        <py-script src="main.py"></py-script>
+    </div> 
+</center>
+
+</body>
+</html>
